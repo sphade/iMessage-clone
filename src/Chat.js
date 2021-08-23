@@ -6,9 +6,10 @@ import { useSelector } from "react-redux";
 import "./chat.css";
 import { selectChatId, selectChatName } from "./features/chatSlice";
 import { selectUser } from "./features/userSlice";
+import FlipMove from "react-flip-move";
 import db from "./firebase";
 import Message from "./Message";
-function Chat() {
+const Chat = () => {
   const user = useSelector(selectUser);
   const [input, setInput] = useState("");
   const chatName = useSelector(selectChatName);
@@ -19,7 +20,7 @@ function Chat() {
       db.collection("chats")
         .doc(chatId)
         .collection("messages")
-        .orderBy("timestamp")
+        .orderBy("timestamp", "desc")
         .onSnapshot((snapshot) =>
           // TODO:create a return statement
           setMessages(
@@ -52,9 +53,11 @@ function Chat() {
         <strong>Details</strong>
       </div>
       <div className="chat__message">
-        {messages.map(({ id, data }) => (
-          <Message key={id} contents={data} />
-        ))}
+        
+          {messages.map(({ id, data }) => (
+            <Message key={id} contents={data} />
+          ))}
+       
       </div>
       <div className="chat__input">
         <form>
@@ -74,6 +77,6 @@ function Chat() {
       </div>
     </div>
   );
-}
+};
 
 export default Chat;

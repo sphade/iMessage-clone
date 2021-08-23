@@ -6,7 +6,6 @@
   justify-content: space-between;
   margin: 15px;
 }
-
 .message > p {
   background-color: #f3f3f3;
   font-size: medium;
@@ -15,7 +14,6 @@
   margin: 10px;
   margin-right: auto;
 }
-
 .message > small {
   color: gray;
   position: absolute;
@@ -23,19 +21,17 @@
   bottom: -5px;
   right: 0;
 }
-
-.message__sender{
+.message__sender {
   margin-left: auto;
 }
-.message__sender > .message__photo{
+.message__sender > .message__photo {
   order: 1;
   margin: 15px;
 }
-.message__photo{
+.message__photo {
   order: 0;
 }
-
-.message__sender > p{
- background-color: #3cabfa;
- color: white;
+.message__sender > p {
+  background-color: #3cabfa;
+  color: white;
 }

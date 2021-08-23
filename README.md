@@ -1,5 +1,8 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
+##live demo
+you can explore a live demo of this app on https://i-message-clone-40c90.web.app/
+
 ## Available Scripts
 
 In the project directory, you can run:
