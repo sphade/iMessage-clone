@@ -23,8 +23,10 @@ Authentication is handle by an auth provider(google)
 
 ## Stage
 The application is currently finished and live though i hope to add more functionalities in the nearest future
-you can view live site here https://determined-hugle-33b846.netlify.app/![imessags]
+you can view live site here https://determined-hugle-33b846.netlify.app/
+
+![imessags](https://user-images.githubusercontent.com/85949974/133020391-d068f78e-edb6-4a15-9d08-47b21e07355f.JPG)
 
 
-(https://user-images.githubusercontent.com/85949974/133020391-d068f78e-edb6-4a15-9d08-47b21e07355f.JPG)
+
  
